@@ -31,8 +31,13 @@ You win!
 ```
 
 ## Project: Command Line
-Version of the classic command line search tool grep - searching in a specified file for a specified string. Arguments are file path
-and a saerch string.
+Version of the classic command line search tool grep - searching in a specified file for a specified string and outputs the result. Arguments are file path (Poem.txt) and a search string ("body"). Output is stored in output.txt File: 
 ```
 cargo run -- body Poem.txt > output.txt
+```
+```
+Search Results:
+I'm nobody! Who are you?
+Are you nobody, too?
+How dreary to be somebody!
 ```
