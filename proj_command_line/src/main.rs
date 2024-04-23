@@ -14,7 +14,7 @@ $ cargo run -- searchstring example-filename.txt*/
 use std::env;
 use std::process;
 
-use Project_command_line::Config;
+use proj_command_line::Config;
 
 
 fn main() {
@@ -31,7 +31,7 @@ fn main() {
 
     //run(config);
 
-    if let Err(e) = Project_command_line::run(config) {
+    if let Err(e) = proj_command_line::run(config) {
         println!("Application error: {e}");
         process::exit(1);
     }
