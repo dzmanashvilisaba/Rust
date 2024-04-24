@@ -54,7 +54,7 @@ fn handle_connection(mut stream: TcpStream) {
         "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.xhtml"),
         "GET /sleep HTTP/1.1" => {
             thread::sleep(Duration::from_secs(4));
-            ("HTTP/1.1 200 OK", "hello.xhtml")
+            ("HTTP/1.1 200 OK", "sleep.xhtml")
         }
         _ => ("HTTP/1.1 404 NOT FOUND", "404.xhtml"),
     };
